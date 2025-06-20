@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+
+    <title>Gamification-spil</title>
+  </head>
+  <body>
+    <h1>Hvem når først til pokalen?</h1>
+
+    <div class="game">
+      <div class="player" id="player1">
+        <div class="img">
+          <img src="Images/Lykke.jpg" />
+        </div>
+        <div class="stars" id="stars1"></div>
+      </div>
+
+      <div class="center">
+        <div class="pokal">
+          <model-viewer
+            src="Images/golden_trophy.glb"
+            alt="3D Pokal"
+            auto-rotate
+            rotation-per-second="20deg"
+            style="width: 100px; height: 100px"
+          >
+          </model-viewer>
+        </div>
+        <div id="winner" class="winner"></div>
+      </div>
+
+      <div class="player" id="player2">
+        <div class="stars" id="stars2"></div>
+        <div class="img">
+          <img src="Images/Sara.jpg" />
+        </div>
+      </div>
+    </div>
+
+
+
+
+  </body>
+</html>

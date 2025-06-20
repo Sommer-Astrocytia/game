@@ -1,0 +1,86 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  background-color: lavender;
+}
+
+h1 {
+  color: rgb(62, 22, 116);
+}
+
+.game {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 150px 10px 10px 10px;
+}
+
+.player {
+  display: flex;
+  align-items: center;
+  width: 200px;
+}
+
+#stars2 {
+  margin-left: auto;
+}
+
+#star1 {
+  margin: 0 0 0 20px;
+}
+
+.stars {
+  position: relative;
+  height: 40px;
+  width: 300px;
+  margin: 10px;
+}
+
+.stars span {
+  position: absolute;
+  font-size: 30px;
+  width: 30px;
+  height: 30px;
+}
+
+#stars1 span {
+  transform: translateX(calc(var(--i) * 40px));
+}
+
+#stars2 span {
+  transform: translateX(calc(var(--i) * -40px));
+}
+
+#player2 {
+  text-align: left;
+}
+
+.center {
+  width: 100px;
+  position: relative;
+}
+
+.winner {
+  position: absolute;
+  top: -50px;
+  font-size: 20px;
+  color: rgb(62, 22, 116);
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-4px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
