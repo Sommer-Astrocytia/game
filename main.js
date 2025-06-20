@@ -1,6 +1,6 @@
 let score1 = 0;
 let score2 = 0;
-const max = 10;
+const max = 12;
 let gameOver = false;
 
 function drawStars() {
@@ -41,7 +41,7 @@ function drawStars() {
         wrapper.style.animationDelay = `${i * 0.2}s`;
 
         const star = document.createElement("model-viewer");
-        star.src = "Images/gold_star.glb";
+        star.src = "gold_star.glb";
         star.setAttribute("disable-tap", "");
         star.setAttribute("interaction-prompt", "none");
         star.style.width = "50px";
