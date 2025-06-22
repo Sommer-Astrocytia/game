@@ -41,7 +41,7 @@ function drawStars() {
         wrapper.style.animationDelay = `${i * 0.2}s`;
 
         const star = document.createElement("model-viewer");
-        star.src = "gold_star.glb";
+        star.src = "Images/gold_star.glb";
         star.setAttribute("disable-tap", "");
         star.setAttribute("interaction-prompt", "none");
         star.style.width = "50px";
