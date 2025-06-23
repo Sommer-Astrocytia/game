@@ -1,7 +1,15 @@
+model-viewer {
+  will-change: transform;
+  backface-visibility: hidden;
+}
+
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: center;
   background-color: lavender;
+}
+
+.wrap {
+  text-align: center;
 }
 
 h1 {
@@ -72,7 +80,7 @@ h1 {
   white-space: nowrap;
 }
 
-img {
+.img img {
   width: 100%;
   border-radius: 20px;
 }
@@ -87,4 +95,13 @@ img {
   100% {
     transform: translateY(0);
   }
+}
+
+.reset {
+  background-image: url(reset.png);
+  width: 20px;
+  height: 20px;
+  margin: 20px;
+  background-size: cover;
+  cursor: pointer;
 }
