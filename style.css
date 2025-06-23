@@ -6,6 +6,7 @@ model-viewer {
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-color: lavender;
+  margin: 20vh 0 0 0;
 }
 
 .wrap {
