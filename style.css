@@ -18,6 +18,10 @@ h1 {
   width: 100%;
 }
 
+.sub {
+  font-size: 10px;
+}
+
 .game {
   display: flex;
   justify-content: space-between;
