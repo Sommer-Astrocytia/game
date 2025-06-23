@@ -14,40 +14,40 @@
     <title>Gamification-spil</title>
   </head>
   <body>
-    <h1>Hvem når først til pokalen?</h1>
+    <div class="wrap">
+        <div class="reset" onclick="resetGame()"></div>
+          <h1>Hvem når først til pokalen?</h1>
 
-    <div class="game">
-      <div class="player" id="player1">
-        <div class="img">
-          <img src="Lykke.jpg" />
-        </div>
-        <div class="stars" id="stars1"></div>
-      </div>
+        <div class="game">
+          <div class="player" id="player1">
+            <div class="img">
+              <img src="Lykke.jpg" />
+            </div>
+            <div class="stars" id="stars1"></div>
+          </div>
 
-      <div class="center">
-        <div class="pokal">
-          <model-viewer
-            src="golden_trophy.glb"
-            alt="3D Pokal"
-            auto-rotate
-            rotation-per-second="20deg"
-            style="width: 100px; height: 100px"
-          >
-          </model-viewer>
-        </div>
-        <div id="winner" class="winner"></div>
-      </div>
+          <div class="center">
+            <div class="pokal">
+              <model-viewer
+                src="golden_trophy.glb"
+                alt="3D Pokal"
+                auto-rotate
+                rotation-per-second="20deg"
+                style="width: 100px; height: 100px"
+              >
+              </model-viewer>
+            </div>
+            <div id="winner" class="winner"></div>
+          </div>
 
-      <div class="player" id="player2">
-        <div class="stars" id="stars2"></div>
-        <div class="img">
-          <img src="Sara.jpg" />
+          <div class="player" id="player2">
+            <div class="stars" id="stars2"></div>
+            <div class="img">
+              <img src="Sara.jpg" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
-
-
-
-
   </body>
 </html>
